@@ -41,7 +41,7 @@ matrix
 
 Question 4
 ----------
-If I execute the expression x <- 4 in R, what is the class of the object 'x' as determined by the `class()' function?
+If I execute the expression x <- 4 in R, what is the class of the object 'x' as determined by the 'class()' function?
 
 ### Answer
 numeric
@@ -60,7 +60,7 @@ What is the class of the object defined by x <- c(4, TRUE)?
 ### Answer
 numeric
 
-###Explanation
+### Explanation
 The numeric class is the "lowest common denominator" here and so all elements will be coerced into that class.
 
 R does automatic coercion of vectors so that all elements of the vector are the same data class.
@@ -83,9 +83,10 @@ The 'rbind' function treats vectors as if they were rows of a matrix. It then ta
 	> x <- c(1, 3, 5)
 	> y <- c(3, 2, 10)
 	> rbind(x, y)
-    [,1] [,2] [,3]
-  x    1    3    5
-  y    3    2   10
+	    [,1] [,2] [,3]
+	  x    1    3    5
+	  y    3    2   10
+
 
 Question 7
 ----------
@@ -105,8 +106,8 @@ a character vector of length 1.
 ### Explanation
 
 	> x <- list(2, "a", "b", TRUE)
-  > x[[2]]
-  [1] "a"
+	> x[[2]]
+	  [1] "a"
 
 Question 9
 ----------
@@ -117,10 +118,10 @@ an integer vector with the values 3, 5, 5, 7.
 
 ### Explanation
 
-  > x <- 1:4
-  > y <- 2:3
-  > x + y
-  [1] 3 5 5 7
+	> x <- 1:4
+	> y <- 2:3
+	> x + y
+	[1] 3 5 5 7
 
 
 Question 10
@@ -133,10 +134,10 @@ x[x < 6] <- 0
 ### Explanation
 You can create a logical vector with the expression x < 6 and then use the [ operator to subset the original vector x.
 
-  > x <- c(3, 5, 1, 10, 12, 6)
-  > x[x < 6] <- 0
-  > x
-  [1]  0  0  0 10 12  6
+	> x <- c(3, 5, 1, 10, 12, 6)
+	> x[x < 6] <- 0
+	> x
+	[1]  0  0  0 10 12  6
 
 
 Question 11
